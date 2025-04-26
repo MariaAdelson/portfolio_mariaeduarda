@@ -1,36 +1,401 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maria Eduarda Adelson Santos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Eduarda | Barbie Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+        }
+        
+        .barbie-pink {
+            background-color: #ff9ff3;
+        }
+        
+        .barbie-darkpink {
+            background-color: #f368e0;
+        }
+        
+        .barbie-lightpink {
+            background-color: #ffd6e7;
+        }
+        
+        .barbie-text {
+            color: #d60b8d;
+        }
+        
+        .barbie-shadow {
+            box-shadow: 0 10px 20px rgba(214, 11, 141, 0.2);
+        }
+        
+        .barbie-border {
+            border: 3px solid #ff9ff3;
+        }
+        
+        .barbie-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .barbie-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(214, 11, 141, 0.4);
+        }
+        
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-bubble {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-bubble:hover {
+            transform: scale(1.1);
+        }
+        
+        .experience-card {
+            transition: all 0.3s ease;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
 </head>
-<body>
-  <header class="perfil">
-    <div class="texto">
-      <h1>Maria Eduarda Adelson Santos</h1>
-      <p>Estudante de Administração | 6º Semestre - Anhanguera</p>
-      <p>Mora em Itaquaquecetuba, SP</p>
-      <p>22 anos | Nascida em 27/07/2002</p>
-      <p>Brasileira</p>
-    </div>
-    <div class="foto">
-      <img src="sua-foto.jpg" alt="Foto de Maria Eduarda">
-    </div>
-  </header>
+<body class="min-h-screen">
+    <!-- Header Section -->
+    <header class="barbie-pink text-white py-8">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-6 md:mb-0">
+                <div class="w-16 h-16 rounded-full barbie-darkpink flex items-center justify-center mr-4">
+                    <i class="fas fa-crown text-2xl"></i>
+                </div>
+                <h1 class="header-title text-3xl md:text-4xl font-bold">Maria Eduarda</h1>
+            </div>
+            <nav class="flex space-x-6">
+                <a href="#about" class="hover:text-pink-200 transition">About</a>
+                <a href="#experience" class="hover:text-pink-200 transition">Experience</a>
+                <a href="#skills" class="hover:text-pink-200 transition">Skills</a>
+                <a href="#contact" class="hover:text-pink-200 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <section class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>
-      Ex-estagiária administrativa da Defensoria Pública do Estado de SP (Itaquaquecetuba) por 2 anos.<br>
-      Experiência anterior em atendimento ao cliente no setor de vendas, SAC e retenção.<br>
-      Conhecimentos em Power BI, Excel, Word, Outlook, ferramentas do Google e pacote Office completo.
-    </p>
-  </section>
+    <!-- Hero Section -->
+    <section class="py-16 barbie-lightpink">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 barbie-text">Hello, I'm Maria Eduarda</span></h2>
+                <p class="text-xl mb-6">Profissional de Administração em Treinamento</p>
+                <p class="mb-8 text-lg">Entusiasta de planejamento estratégico, otimização de processos e análise de dados com foco em eficiência operacional.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="barbie-btn px-6 py-3 rounded-full barbie-darkpink text-white font-bold">Contact Me</a>
+                    <a href="#experience" class="barbie-btn px-6 py-3 rounded-full bg-white barbie-text font-bold barbie-border">My Experience</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full barbie-pink absolute -z-10 top-4 left-4"></div>
+                    <img src="WhatsApp Image 2025-04-25 at 20.47.32.jpeg" 
+                         alt="" 
+                         class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full relative floating">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Maria Eduarda Adelson Santos</p>
-  </footer>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center barbie-text">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg mb-6">
+                    Maria Eduarda Adelson Santos é profissional em formação na área de Administração, com sólida experiência em rotinas administrativas e atendimento ao cliente.
+                </p>
+                <p class="text-lg mb-6">
+                    Atualmente, ela é cursista de Bacharelado em Administração pela Universidade Anhanguera, com previsão de formatura para 2026, e busca uma oportunidade remota para aplicar suas habilidades em planejamento estratégico, otimização de processos e análise de dados com foco em eficiência operacional.
+                </p>
+                <p class="text-lg mb-6">
+                    Com perfil analítico, comprometido e colaborativo, Maria Eduarda está preparada para contribuir em equipes que valorizam organização, inovação e resultados.
+                </p>
+                <div class="flex flex-wrap justify-center mt-8 gap-4">
+                    <div class="px-6 py-3 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                        <i class="fas fa-graduation-cap mr-2"></i> Bachelor's in Administration (2026)
+                    </div>
+                    <div class="px-6 py-3 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                        <i class="fas fa-laptop-code mr-2"></i> Tech-Savvy Professional
+                    </div>
+                    <div class="px-6 py-3 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i> Data Analysis Enthusiast
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 barbie-lightpink">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center barbie-text">My Experience</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Experience 1 -->
+                <div class="experience-card bg-white p-6 rounded-xl barbie-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full barbie-pink flex items-center justify-center mr-4">
+                            <i class="fas fa-balance-scale text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl barbie-text">Public Defender's Office</h3>
+                            <p class="text-gray-600">Internship</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Controle e arquivamento de documentos legais</li>
+                        <li>Gerenciamento de planilhas e almoxarifado</li>
+                        <li>Coordenação de estagiários</li>
+                        <li>Suporte em atividades administrativas</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="experience-card bg-white p-6 rounded-xl barbie-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full barbie-pink flex items-center justify-center mr-4">
+                            <i class="fas fa-headset text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl barbie-text">Inbound Telemarketing</h3>
+                            <p class="text-gray-600">Operator</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Atendimento ao cliente em ambientes dinâmicos</li>
+                        <li>Resolução de demandas com agilidade e empatia</li>
+                        <li>Experiência em ambientes de alta demanda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="max-w-4xl mx-auto mt-12">
+                <h3 class="text-2xl font-bold mb-6 barbie-text text-center">Education & Training</h3>
+                <div class="bg-white p-6 rounded-xl barbie-shadow">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 rounded-full barbie-pink flex items-center justify-center mr-4">
+                            <i class="fas fa-university text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Anhanguera University</h4>
+                            <p class="text-gray-600">Bachelor's in Administration (Expected 2026)</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <div class="px-4 py-2 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                            <i class="fas fa-chart-pie mr-2"></i> Power BI
+                        </div>
+                        <div class="px-4 py-2 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                            <i class="fab fa-python mr-2"></i> Python
+                        </div>
+                        <div class="px-4 py-2 rounded-full barbie-lightpink barbie-text font-bold flex items-center">
+                            <i class="fas fa-file-excel mr-2"></i> Office Package
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center barbie-text">My Skills</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Habilidade 1 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-project-diagram text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Planejamento Estratégico</h3>
+                    </div>
+
+                    <!-- Habilidade 2 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-cogs text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Otimização de Processos</h3>
+                    </div>
+
+                    <!-- Habilidade 3 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-database text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Análise de Dados</h3>
+                    </div>
+
+                    <!-- Habilidade 4 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Coordenação de Equipes</h3>
+                    </div>
+
+                    <!-- Habilidade 5 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-file-excel text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Gestão de Planilhas</h3>
+                    </div>
+
+                    <!-- Habilidade 6 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-archive text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Controle de Documentos</h3>
+                    </div>
+
+                    <!-- Habilidade 7 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-comments text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Atendimento ao Cliente</h3>
+                    </div>
+
+                    <!-- Habilidade 8 -->
+                    <div class="skill-bubble p-4 rounded-xl barbie-lightpink text-center barbie-shadow">
+                        <div class="w-16 h-16 rounded-full barbie-pink flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-lightbulb text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold barbie-text">Resolução de Problemas</h3>
+                    </div>
+                </div>
+                
+                <div class="mt-12 p-6 rounded-xl barbie-lightpink">
+                    <h3 class="text-xl font-bold mb-4 barbie-text text-center">Technical Proficiencies</h3>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="px-4 py-2 bg-white rounded-full barbie-text font-bold flex items-center">
+                            <i class="fab fa-google mr-2"></i> Google Workspace
+                        </div>
+                        <div class="px-4 py-2 bg-white rounded-full barbie-text font-bold flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> Outlook
+                        </div>
+                        <div class="px-4 py-2 bg-white rounded-full barbie-text font-bold flex items-center">
+                            <i class="fas fa-gavel mr-2"></i> Legal Systems
+                        </div>
+                        <div class="px-4 py-2 bg-white rounded-full barbie-text font-bold flex items-center">
+                            <i class="fas fa-chart-bar mr-2"></i> Power BI
+                        </div>
+                        <div class="px-4 py-2 bg-white rounded-full barbie-text font-bold flex items-center">
+                            <i class="fab fa-python mr-2"></i> Python
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 barbie-darkpink text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Let's Connect!</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+                    <p class="mb-6">Estou procurando oportunidades remotas para aplicar minhas habilidades administrativas e analíticas. Entre em contato!</p>
+                </div>
+                
+                <div>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-white barbie-text flex items-center justify-center mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Phone</p>
+                                <p>(11) 97268-0616</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-white barbie-text flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Email</p>
+                                <p>maria.eduardaadelson@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 barbie-pink text-white text-center">
+        <div class="container mx-auto px-4">
+            <p>© 2023 Maria Eduarda Adelson Santos. All rights reserved.</p>
+            <p class="mt-2">Designed with <i class="fas fa-heart"></i> and Barbie inspiration</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animation for skill bubbles
+        const skillBubbles = document.querySelectorAll('.skill-bubble');
+        skillBubbles.forEach(bubble => {
+            bubble.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            bubble.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Form submission (would be connected to backend in real implementation)
+        const contactForm = document.querySelector('form');
+        if(contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
 </body>
 </html>
